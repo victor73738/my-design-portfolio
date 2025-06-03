@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="media/mypic.jpg" alt="[Your Name] Profilope" id="profile-img">
+        <h1>Hello, I'm Agu Emmanuel!</h1>
+        <p>Passionate about web development and creating engaging experiences.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>"As a driven and ambitious male software engineering student at Caleb University, I am dedicated to
+                harnessing the power of technology to solve real-world problems. With a strong foundation in programming
+                languages, data structures, and software design patterns, I am well-equipped to tackle complex
+                projects and collaborate with peers to bring innovative ideas to life. My passion for software
+                engineering is evident in my academic pursuits, and I am poised to make a meaningful impact in the
+                tech industry upon graduation."</p>
+        </section>
+
+        <section id="multimedia-showcase">
+            <h2>Multimedia Showcase</h2>
+            <h3>My Audio Greeting:</h3>
+            <audio controls>
+                <source src="media/myaudio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>A Quick Project Video:</h3>
+            <video controls width="320" height="240" id="video">
+                <source src="media/myprojectvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="interactive-skills">
+            <h2>My Skills</h2>
+            <div class="skill-buttons">
+                <button class="skill-btn" data-skill="HTML">HTML</button>
+                <button class="skill-btn" data-skill="CSS">CSS</button>
+                <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+            </div>
+            <p id="skill-description">Click a skill to learn more!</p>
+        </section>
+
+        <section id="portfolio-list">
+            <h2>My Projects</h2>
+            <div id="projects-container">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Agu Emmanuel. All rights reserved.</p>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
